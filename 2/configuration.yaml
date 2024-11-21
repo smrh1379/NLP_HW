@@ -1,0 +1,17 @@
+connectors:
+  matrix:
+    # Required
+    mxid: "@nlpbot16:matrix.org"
+    password: "nlp123456789@"
+    rooms:
+      "main": "#SUT_NLP_BOT:matrix.org"
+    # Optional
+    homeserver: "https://matrix.org"
+    nick: "NLP bot" # The nick will be set on startup
+    enable_encrytion: True
+    welcome-message: True
+skills:
+  - name: bot_messaging
+    path: skills/bot_messaging.py
+  - name: accept_invites
+    path: skills/accept_invites.py
